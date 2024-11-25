@@ -18,7 +18,7 @@ document.getElementById("addItemButton").addEventListener("click", function () {
     newItem.classList.add("list");
 
     const checkboxImg = document.createElement("img");
-    checkboxImg.src = "assets/buttonUnchecked.svg";
+    checkboxImg.src = "../assets/buttonUnchecked.svg";
     checkboxImg.classList.add("custom-checkbox");
 
     checkboxImg.addEventListener("click", function () {
@@ -31,7 +31,7 @@ document.getElementById("addItemButton").addEventListener("click", function () {
     buttonRemove.classList.add("remove-btn");
 
     const imgRemove = document.createElement("img");
-    imgRemove.src = "assets/remove.svg";
+    imgRemove.src = "../assets/remove.svg";
     buttonRemove.appendChild(imgRemove);
 
     newItem.appendChild(checkboxImg);
