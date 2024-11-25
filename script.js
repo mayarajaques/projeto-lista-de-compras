@@ -23,8 +23,8 @@ document.getElementById("addItemButton").addEventListener("click", function () {
 
     checkboxImg.addEventListener("click", function () {
       checkboxImg.src = checkboxImg.src.includes("buttonUnchecked.svg") 
-        ? "assets/buttonChecked.svg" 
-        : "assets/buttonUnchecked.svg";
+        ? "../assets/buttonChecked.svg" 
+        : "../assets/buttonUnchecked.svg";
     });
 
     const buttonRemove = document.createElement("button");
@@ -52,11 +52,11 @@ document.getElementById("addItemButton").addEventListener("click", function () {
 
     // Criar botão de fechar
     const closeButton = document.createElement("button");
-    closeButton.innerHTML = `<img src="assets/delete-small.png" alt="Fechar" class="close-btn" />`;
+    closeButton.innerHTML = `<img src="../assets/delete-small.png" alt="Fechar" class="close-btn" />`;
 
     // Criar imagem de alerta
     const imgAlert = document.createElement("img");
-    imgAlert.src = "assets/alert.svg";
+    imgAlert.src = "../assets/alert.svg";
 
     buttonRemove.addEventListener("click", function () {
       newItem.remove();
