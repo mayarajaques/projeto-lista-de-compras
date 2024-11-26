@@ -154,10 +154,19 @@ input[type=""]:focus {
   visibility: hidden;
   /* Inicialmente escondido */
 
+  animation: disappearAlert 3000ms 2s  forwards;
+  /* animation-delay:  3000ms; */
+
   position: relative; 
   margin-top:  36px;
  
 
+}
+
+@keyframes disappearAlert {
+  to {
+    opacity: 0%;
+  }
 }
 
 #messageContainer img {

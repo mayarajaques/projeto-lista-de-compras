@@ -76,7 +76,15 @@ document.getElementById("addItemButton").addEventListener("click", function () {
       closeButton.addEventListener("click", function () {
         messageContainer.style.display = "none";
       });
-    });
+
+
+             // Ocultar automaticamente após 3 segundos
+             setTimeout(() => {
+              messageContainer.style.display = "none";
+            }, 3000); // Tempo em milissegundos
+          });
+      
+
   } else {
     alert("Por favor, insira um item válido na lista de compras.");
   }
