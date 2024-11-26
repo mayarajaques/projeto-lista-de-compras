@@ -18,20 +18,20 @@ document.getElementById("addItemButton").addEventListener("click", function () {
     newItem.classList.add("list");
 
     const checkboxImg = document.createElement("img");
-    checkboxImg.src = "../assets/buttonUnchecked.svg";
+    checkboxImg.src = "assets/buttonUnchecked.svg";
     checkboxImg.classList.add("custom-checkbox");
 
     checkboxImg.addEventListener("click", function () {
       checkboxImg.src = checkboxImg.src.includes("buttonUnchecked.svg") 
-        ? "../assets/buttonChecked.svg" 
-        : "../assets/buttonUnchecked.svg";
+        ? "assets/buttonChecked.svg" 
+        : "assets/buttonUnchecked.svg";
     });
 
     const buttonRemove = document.createElement("button");
     buttonRemove.classList.add("remove-btn");
 
     const imgRemove = document.createElement("img");
-    imgRemove.src = "../assets/remove.svg";
+    imgRemove.src = "assets/remove.svg";
     buttonRemove.appendChild(imgRemove);
 
     newItem.appendChild(checkboxImg);
@@ -52,11 +52,11 @@ document.getElementById("addItemButton").addEventListener("click", function () {
 
     // Criar botão de fechar
     const closeButton = document.createElement("button");
-    closeButton.innerHTML = `<img src="../assets/delete-small.png" alt="Fechar" class="close-btn" />`;
+    closeButton.innerHTML = `<img src="assets/delete-small.png" alt="Fechar" class="close-btn" />`;
 
     // Criar imagem de alerta
     const imgAlert = document.createElement("img");
-    imgAlert.src = "../assets/alert.svg";
+    imgAlert.src = "assets/alert.svg";
 
     buttonRemove.addEventListener("click", function () {
       newItem.remove();
